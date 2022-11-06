@@ -1,0 +1,75 @@
+@import '../general.sass' 
+
+body, html
+    background-color: whitesmoke
+
+nav
+    width: 320px
+    height: 100%
+    position: fixed
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    background-color: white
+
+    #nav_title
+        display: flex
+        width: 80%
+        margin-top: 50px
+        i
+            color: $blue
+            font-size: 45px
+            margin-right: 15px
+        h1
+            color: $DarkGray
+            font-size: 37px
+            margin: 0
+
+    #nav_menu
+        width: 80%
+        min-height: 420px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-top: -100px
+
+        .nav_menu_div
+            display: flex
+            align-items: center
+            i
+                color: $LightGray
+                font-size: 26px
+                margin-right: 10px
+            span
+                color: $DarkGray
+                font-weight: bold
+                font-size: 23px
+        .nav_menu_div:hover
+            cursor: pointer
+            transform: scale(1.03)
+            i
+                color: $blue
+                font-size: 26px
+                margin-right: 10px
+        
+    #nav_logout
+        display: flex
+        align-items: center
+        width: 80%
+        margin-block: 50px
+        i
+            color: $red
+            font-size: 35px
+            margin-right: 10px
+        span
+            color: $red
+            font-size: 25px
+            font-weight: bold
+    #nav_logout:hover
+        transform: scale(1.02)
+        cursor: pointer
+        i
+            color: #e4536d
+        span
+            color: #e4536d

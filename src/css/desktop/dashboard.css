@@ -1,1 +1,96 @@
-/*# sourceMappingURL=dashboard.css.map */
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Signika Negative", sans-serif;
+}
+
+body, html {
+  background-color: whitesmoke;
+}
+
+nav {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+nav #nav_title {
+  display: flex;
+  width: 80%;
+  margin-top: 50px;
+}
+nav #nav_title i {
+  color: #0864fc;
+  font-size: 45px;
+  margin-right: 15px;
+}
+nav #nav_title h1 {
+  color: #4e5672;
+  font-size: 37px;
+  margin: 0;
+}
+nav #nav_menu {
+  width: 80%;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -100px;
+}
+nav #nav_menu .nav_menu_div {
+  display: flex;
+  align-items: center;
+}
+nav #nav_menu .nav_menu_div i {
+  color: #7c8cb2;
+  font-size: 26px;
+  margin-right: 10px;
+}
+nav #nav_menu .nav_menu_div span {
+  color: #4e5672;
+  font-weight: bold;
+  font-size: 23px;
+}
+nav #nav_menu .nav_menu_div:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+nav #nav_menu .nav_menu_div:hover i {
+  color: #0864fc;
+  font-size: 26px;
+  margin-right: 10px;
+}
+nav #nav_logout {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-block: 50px;
+}
+nav #nav_logout i {
+  color: #fc6480;
+  font-size: 35px;
+  margin-right: 10px;
+}
+nav #nav_logout span {
+  color: #fc6480;
+  font-size: 25px;
+  font-weight: bold;
+}
+nav #nav_logout:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+nav #nav_logout:hover i {
+  color: #e4536d;
+}
+nav #nav_logout:hover span {
+  color: #e4536d;
+}/*# sourceMappingURL=dashboard.css.map */
