@@ -8,7 +8,7 @@ body, html {
   font-family: "Signika Negative", sans-serif;
 }
 
-body {
+body, html {
   background-color: #f8fcfc;
 }
 
@@ -24,11 +24,11 @@ nav {
   background-color: white;
 }
 nav #burgerIcon {
-  width: 55px;
+  width: 52px;
   height: 55px;
   position: absolute;
   right: 13px;
-  top: 43px;
+  top: 44px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -41,14 +41,22 @@ nav #burgerIcon .bar {
   background-color: #4e5672;
   border-radius: 22px;
 }
+nav #burgerIcon .bar2 {
+  width: 75%;
+  height: 6px;
+  background-color: #4e5672;
+  border-radius: 22px;
+}
 nav #burgerIcon:hover {
-  width: 58px;
-  margin-right: -1.5px;
-  transform: scale(1.02);
+  transform: scale(1.03);
   cursor: pointer;
 }
 nav #burgerIcon:hover .bar {
   background-color: #0864fc;
+}
+nav #burgerIcon:hover .bar2 {
+  background-color: #0864fc;
+  margin-left: 15%;
 }
 nav #nav_title {
   display: flex;

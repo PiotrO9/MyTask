@@ -1,6 +1,6 @@
 @import '../general.sass' 
 
-body
+body, html
     background-color: #f8fcfc
 
 /*-----------------------| Menu |-----------------------*/
@@ -15,11 +15,11 @@ nav
     background-color: white
 
     #burgerIcon
-        width: 55px
+        width: 52px
         height: 55px
         position: absolute
         right: 13px
-        top: 43px
+        top: 44px
         display: flex
         flex-direction: column
         justify-content: space-evenly
@@ -30,14 +30,19 @@ nav
             height: 6px
             background-color: $DarkGray
             border-radius: 22px
+        .bar2
+            width: 75%
+            height: 6px
+            background-color: $DarkGray
+            border-radius: 22px
     #burgerIcon:hover
-        width: 58px
-        margin-right: -1.5px
-        transform: scale(1.02)
+        transform: scale(1.03)
         cursor: pointer
         .bar
             background-color: $blue
-
+        .bar2
+            background-color: $blue
+            margin-left: 15%
 
     #nav_title
         display: flex
