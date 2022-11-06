@@ -1,1 +1,77 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  height: 85%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main #ContentContainer {
+  height: 100%;
+  width: 65%;
+}
+body main #ContentContainer h1 {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+body main #ContentContainer p {
+  font-size: 34px;
+}
+body main #FormContainer {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #FormContainer form {
+  height: 700px;
+  width: 480px;
+  display: flex;
+  border: 5px black solid;
+  border-radius: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+body main #FormContainer form #FormDatasContainer {
+  height: 65%;
+  width: 60%;
+}
+body main #FormContainer form #FormDatasContainer #InputsContainer {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body main #FormContainer form #FormDatasContainer #InputsContainer input {
+  height: 30px;
+}
+body main #FormContainer form #FormDatasContainer #OperationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body main #FormContainer form #SubmitContainer {
+  height: 35%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #FormContainer form #SubmitContainer #SubmitButton {
+  height: 50px;
+  width: 200px;
+}/*# sourceMappingURL=index.css.map */
