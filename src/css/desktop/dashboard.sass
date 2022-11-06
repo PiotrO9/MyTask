@@ -1,8 +1,9 @@
 @import '../general.sass' 
 
-body, html
-    background-color: whitesmoke
+body
+    background-color: #f8fcfc
 
+/*-----------------------| Menu |-----------------------*/
 nav
     width: 320px
     height: 100%
@@ -13,10 +14,36 @@ nav
     justify-content: space-between
     background-color: white
 
+    #burgerIcon
+        width: 55px
+        height: 55px
+        position: absolute
+        right: 13px
+        top: 43px
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        border: 0
+        background-color: #00000000
+        .bar
+            width: 100%
+            height: 6px
+            background-color: $DarkGray
+            border-radius: 22px
+    #burgerIcon:hover
+        width: 58px
+        margin-right: -1.5px
+        transform: scale(1.02)
+        cursor: pointer
+        .bar
+            background-color: $blue
+
+
     #nav_title
         display: flex
         width: 80%
         margin-top: 50px
+        flex-wrap: wrap
         i
             color: $blue
             font-size: 45px
@@ -25,6 +52,19 @@ nav
             color: $DarkGray
             font-size: 37px
             margin: 0
+        #menu-nickname
+            color: $LightGray
+            font-size: 25px
+            margin: 13px 0 0 0
+            i
+                font-size: 20px
+                display: none
+        #menu-nickname:hover
+            cursor: pointer
+            color: $DarkGray
+            transform: scale(1.02)
+            i
+                display: inline
 
     #nav_menu
         width: 80%
