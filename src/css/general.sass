@@ -3,6 +3,23 @@ $red: #fc6480
 $DarkGray: #4e5672
 $LightGray: #7c8cb2
 
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin flex-justify-content($justify)
+    @include flex-center
+    justify-content: $justify
+
+@mixin flex-direction($direction)
+    display: flex
+    flex-direction: $direction
+
+@mixin sizes($width, $height)
+    width: $width
+    height: $height
+
 body, html
     width: 100%
     height: 100%
