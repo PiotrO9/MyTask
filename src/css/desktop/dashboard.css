@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, html {
   width: 100%;
   height: 100%;
@@ -14,7 +15,7 @@ body, html {
 
 /*-----------------------| Menu |-----------------------*/
 nav {
-  width: 320px;
+  width: 290px;
   min-height: 880px;
   height: 100%;
   position: fixed;
@@ -105,9 +106,16 @@ nav #nav_menu .nav_menu_div {
   align-items: center;
 }
 nav #nav_menu .nav_menu_div i {
+  width: 45px;
+  height: 45px;
+  background-color: whitesmoke;
+  border-radius: 16px;
   color: #7c8cb2;
   font-size: 26px;
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav #nav_menu .nav_menu_div span {
   color: #4e5672;
@@ -148,4 +156,15 @@ nav #nav_logout:hover i {
 }
 nav #nav_logout:hover span {
   color: #e4536d;
+}
+
+/*-----------------| Menu - zwinięte |------------------*/
+nav.menuActive {
+  width: 68px;
+}
+nav.menuActive .nav_menu_div i {
+  margin: 0 0 0 0;
+}
+nav.menuActive .nav_menu_div span {
+  display: none;
 }/*# sourceMappingURL=dashboard.css.map */

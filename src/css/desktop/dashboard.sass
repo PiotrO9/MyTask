@@ -5,7 +5,7 @@ body, html
 
 /*-----------------------| Menu |-----------------------*/
 nav
-    width: 320px
+    width: 290px
     min-height: 880px
     height: 100%
     position: fixed
@@ -84,9 +84,17 @@ nav
             display: flex
             align-items: center
             i
+                width: 45px
+                height: 45px
+                background-color: whitesmoke
+                border-radius: 16px
                 color: $LightGray
                 font-size: 26px
                 margin-right: 10px
+
+                display: flex
+                justify-content: center
+                align-items: center
             span
                 color: $DarkGray
                 font-weight: bold
@@ -119,3 +127,13 @@ nav
             color: #e4536d
         span
             color: #e4536d
+
+/*-----------------| Menu - zwinięte |------------------*/
+nav.menuActive
+    width: 68px
+    .nav_menu_div
+        i
+            margin: 0 0 0 0
+
+        span
+            display: none
